@@ -6,4 +6,4 @@
 ## Other
 # Authorization 
 ## RBAC
-# Central vs Federated vs Self Souvereign
+# Central vs Federated vs Self Souvereign Identity
