@@ -7,9 +7,9 @@
 ### IPv6
 ## UDP
 ## TCP
+### DNS
 ### HTTP
 ### Websocket
 ### MQTT
-### DNS
 ### TLS
 #### Encryption & Certificates
