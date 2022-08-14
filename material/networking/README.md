@@ -28,7 +28,8 @@ The basic unit for IP is called packet:
 
 ![IP packet](https://www.w3.org/People/Frystyk/thesis/IPFrame.gif) 
 ## Transport layer
-
+### Ports
+In computer networking, a port is a number assigned to uniquely identify a connection endpoint and to direct data to a specific service. At the software level, within an operating system, a port is a logical construct that identifies a specific process or a type of network service. A port is identified for each transport protocol and address combination by a 16-bit unsigned number, known as the port number.
 ### UDP
 UDP - The User Datagram Protocol (UDP) is a very thin protocol build on top of the IP. It is, what is known as, a connectionless transmission protocol designed to reduce latency of delivery. To do this, UDP sends data packets (or datagrams) to hosts, on an IP network, with minimum reliability and delivery guarantee.
 The basic unit of data is the User datagram:
