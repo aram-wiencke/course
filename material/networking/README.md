@@ -24,11 +24,11 @@ The functions  describe the basic applications for communication of all communic
  Let's have a look at IP.
 ### IP
 Internet Protocol provides the ability of computers to communicate with other computers on the same network. This connection-less protocol specifies concepts such as Addressing and Routing to enable it to send data packets (datagrams) from one host to another host connected on the same network or across network boundaries.
-The basic IP datagram:
+The basic unit for IP is called packet:
 
+![IP packet](https://www.w3.org/People/Frystyk/thesis/IPFrame.gif) 
 ## Transport layer
 
-![IP datagram](https://www.w3.org/People/Frystyk/thesis/IPFrame.gif) 
 ### UDP
 UDP - The User Datagram Protocol (UDP) is a very thin protocol build on top of the IP. It is, what is known as, a connectionless transmission protocol designed to reduce latency of delivery. To do this, UDP sends data packets (or datagrams) to hosts, on an IP network, with minimum reliability and delivery guarantee.
 The basic unit of data is the User datagram:
