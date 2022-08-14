@@ -6,7 +6,7 @@ But to provide an general overview this chapter starts with the OSI model showin
 ## OSI model
 The Open Systems Interconnection model is a conceptual model that splits the functions of communication in abstract layers. It does not describe the possible internal implementation, it rather 
  Each intermediate layer serves a class of functionality to the layer above it and is served by the layer below it.
-
+// TODO: write about why a layer is not allowed to "access" another layer that is not directly below or above itself.
 The functions  describe the basic applications for communication of all communication protocols.
  The OSI model consists out of the following layers Physical, Data link, Network, Transport, Session, Presentation and Application.
 
