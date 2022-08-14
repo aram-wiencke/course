@@ -37,6 +37,7 @@ The basic unit of data is the User datagram:
 ### TCP
 TCP - When the transmission of data, between hosts on a network, requires a more robust guarantees of delivery than, say UDP, the Transmission Control Protocol (or TCP) is used over an IP network. The protocol uses a session between communicating parties which starts with a handshake to establish a durable connection between hosts that can handle transmission error, out-of-order packets, and delivery guarantee.
 The basic data unit is called segment in TCP:
+
 ![User datagram](https://www.w3.org/People/Frystyk/thesis/TCPSegment.gif) 
 
 ## Application Layer
