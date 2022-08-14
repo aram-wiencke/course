@@ -1,6 +1,6 @@
 # Networking
 The topic of networks is a large broad field from hardware to software solutions. 
-Most common Software Systems use TCP over IP. Therefor this will be our focus for this chapter.
+Most common Software Systems use TCP over IP. Therefore this will be our focus for this chapter.
 We want to gain an understanding how common high level protocols like HTTP work upon this stack.
 But to provide an general overview this chapter starts with the OSI model showing the layers for communication for computing systems in an abstract form. Later on it will continue describing examples of layers' implementations like IP, TCP, HTTP, etc. 
 ## OSI model
