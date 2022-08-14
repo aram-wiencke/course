@@ -1,2 +1,2 @@
 # Software Engineering Course
-This repository contains courses about different topics for software engineering. It aims to provide a short introduction to topics in order to give the reader an overview. This overview shall give the reader the possibility to identify topics to dive into deeper.
+This repository contains courses about different topics for software engineering. It aims to provide a short introduction and overview for software engineering topics. That overview shall a general understanding. We are going to provide code examples ... and will relate the theory with real world use cases.
