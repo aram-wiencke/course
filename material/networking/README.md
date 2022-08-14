@@ -27,6 +27,7 @@ Internet Protocol provides the ability of computers to communicate with other co
 The basic IP datagram:
 
 ## Transport layer
+
 ![IP datagram](https://www.w3.org/People/Frystyk/thesis/IPFrame.gif) 
 ### UDP
 UDP - The User Datagram Protocol (UDP) is a very thin protocol build on top of the IP. It is, what is known as, a connectionless transmission protocol designed to reduce latency of delivery. To do this, UDP sends data packets (or datagrams) to hosts, on an IP network, with minimum reliability and delivery guarantee.
