@@ -6,8 +6,6 @@ But to provide an general overview this chapter starts with the OSI model showin
 ## OSI model
 The Open Systems Interconnection model is a conceptual model that splits the functions of communication in abstract layers. It does not describe the possible internal implementation, it rather 
  Each intermediate layer serves a class of functionality to the layer above it and is served by the layer below it.
- 
-// TODO: write about why a layer is not allowed to "access" another layer that is not directly below or above itself.
 
 The functions  describe the basic applications for communication of all communication protocols.
  The OSI model consists out of the following layers Physical, Data link, Network, Transport, Session, Presentation and Application.
@@ -21,6 +19,7 @@ The functions  describe the basic applications for communication of all communic
 | Media layers | 3     | Network      | Packet                   | Structuring and managing a multi-node network, including addressing, routing and traffic control                                                 |
 |              | 2     | Data link    | Frame                    | Transmission of data frames between two nodes connected by a physical layer                                                                      |
 |              | 1     | Physical     | Bit, Symbol              | Transmission and reception of raw bit streams over a physical medium                                                                             |
+
 ## Network layer
  The network layer is responsible for packet forwarding including routing through intermediate routers. Examples of protocols operating at the network layer are DDP, IGMP, IP (IPv4/IPv6).
  Let's have a look at IP.
@@ -49,6 +48,39 @@ Now that we understand the TCP/IP we stack them to understand how they are used 
 ![User datagram](https://www.oreilly.com/library/view/http-the-definitive/1565925092/httpatomoreillycomsourceoreillyimages96904.png) 
 
 ### HTTP
+Hypertext Transfer Protocol is the application layer protocol we going first to have a look at. HTTP is the foundation of data communication for the World Wide Web. 
+As you might know we use it daily when browsing on the Web. Our device is the client which is requesting a website from a server. 
+Or in short: HTTP is a request-response protocol that uses a client-server model. Unlike FTP HTTP is a stateless protocol i.e. the server does not need to retain information for each user over multiple requests.
+A HTTP request or response is consist out of three sections the start line, the Header and the Body. Let's first have a look how a http request is structured and then we'll have a look whats different at the HTTP response.
+
+#### HTTP request
+HTTP requests are message sent by the client to initiate an action on the server. Their start-line contain three elements:
+- HTTP method like GET, which describes the action to be performed
+- the request target, usually an URL
+- and the HTTP version, which defines the structure of the remaining message and acting as an indicator of the expected version to use for the response.
+The HTTP Headers follow after the start line. They are case-insensitive string that is followed by a colon (':') and a value for that header. One header is one line in the HTTP message.
+The final part of the request is the body. Not all request have one. For example a request with the method GET is used for fetching data. The body can contain different kind of data with the header "Content-Type" and "Content-Length" the receiver can understand what type of data it gets and what size the data have in order to make sure when it is finished.
+
+```
+POST /examples HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Context-Type: text/html
+Content-Length: 123
+
+Body line 1
+Body line 2
+...
+
+```
+
+##### Methods
+
+
+#### HTTP Response
+The HTTP response also consists out of the start line, the header and the body. It divers from the request only at the start line. The start line does not contain a method since the server is responding with an result and is not demanding an action from the client. Instead of the method the start line contains the status code which indicate the success or the failure of that demanded action.
+
+##### Status codes
 
 ### Websocket
 ### MQTT
@@ -56,3 +88,19 @@ Now that we understand the TCP/IP we stack them to understand how they are used 
 #### Encryption & Certificates
 ## Coding 
 We are going to use https://github.com/vladimirvivien/go-networking as reference for programming
+
+
+
+## What component handles which layer?
+The device (e.g. our computer) is running on covers the physical layer and tha data link layer. The hardware and firmware translates between physical signals and bits. They also group them to frames. The device's driver controls the according functions. The network layer and the transport layer are covered by the OS, although privileged user space processes may get access to the data.
+
+>A modern computer operating system usually segregates virtual memory into user space and kernel space. Primarily, this separation serves to provide memory protection and hardware protection from malicious or errant software behaviour.
+
+Kernel space is strictly reserved for running a privileged operating system kernel, kernel extensions, and most device drivers. In contrast, user space is the memory area where application software and some drivers execute.
+
+The frame header data tells what to do with the frame. If the kernel (more precisely: the network driver) knows the type of the payload (e.g. IPv4 or IPv6) then the packet (after stripping off data link layer headers and trailers) is passed up to the according network layer driver.
+
+It will handle all peculiarities of the network layer protocol, such as fragmentation and reassembly, checksum calculation and verification, etc. plus all network layer specific tasks such as routing and packet filtering. Depending on the payload (TCP, UDP, etc.) the packet is passed further up to the according transport layer driver. It will handle all the transport layer specific stuff. For connection oriented protocols like TCP it means for instance keeping track of the connection state, maintaining the queues and doing the bookkeeping; another thing is congestion control.
+
+Once a packet has passed that layer it is passed further up (again after stripping the transport layer header), but this time to the user space process. The user space process sees virtually nothing of the lower level processing.
+
