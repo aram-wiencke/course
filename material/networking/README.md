@@ -20,6 +20,9 @@ The functions  describe the basic applications for communication of all communic
 |              | 2     | Data link    | Frame                    | Transmission of data frames between two nodes connected by a physical layer                                                                      |
 |              | 1     | Physical     | Bit, Symbol              | Transmission and reception of raw bit streams over a physical medium                                                                             |
 
+
+![OSIvsTCP/IP](https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/02/OSI-vs.-TCPIP-models.jpg)
+
 ## Network layer
  The network layer is responsible for packet forwarding including routing through intermediate routers. Examples of protocols operating at the network layer are DDP, IGMP, IP (IPv4/IPv6).
  Let's have a look at IP.
