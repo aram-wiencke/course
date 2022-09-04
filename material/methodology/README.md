@@ -47,8 +47,8 @@ Mob Programming provides:
 * Meetings such Planning or Retrospectives can be done on demand
 * The daily meeting is redundant with mob programming
 * “Development flow” / Less delay
-** the User Story with the highest prioritisation is being developed without delays
-** Continues review of code and perspectives
+ * the User Story with the highest prioritisation is being developed without delays
+  * Continues review of code and perspectives
 
 ## Drawbacks
 Mob Programming has:
