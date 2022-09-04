@@ -80,6 +80,7 @@ HTTP requests are message sent by the client to initiate an action on the server
 - HTTP method like GET, which describes the action to be performed
 - the request target, usually an URL
 - and the HTTP version, which defines the structure of the remaining message and acting as an indicator of the expected version to use for the response.
+
 The HTTP Headers follow after the start line. They are case-insensitive string that is followed by a colon (':') and a value for that header. One header is one line in the HTTP message.
 The final part of the request is the body. Not all request have one. For example a request with the method GET is used for fetching data. The body can contain different kind of data with the header "Content-Type" and "Content-Length" the receiver can understand what type of data it gets and what size the data have in order to make sure when it is finished.
 
