@@ -29,13 +29,9 @@ And with team members split up to different stories delays are created, when que
 Mob Programming needs:
 
 * a agile team that
-
-** is cross functional including product owner, UI/UX designer and scrum master has all the abilities for the user story,
-
-** and has access to the stakeholder, domain experts or users
-
+  * is cross functional including product owner, UI/UX designer and scrum master has all the abilities for the user story,
+  * and has access to the stakeholder, domain experts or users
 * somewhat similar work time
-
 * all participants try the methodology voluntarily
 
 ## Benefits
@@ -48,7 +44,7 @@ Mob Programming provides:
 * The daily meeting is redundant with mob programming
 * “Development flow” / Less delay
  * the User Story with the highest prioritisation is being developed without delays
-  * Continues review of code and perspectives
+ * Continues review of code and perspectives
 
 ## Drawbacks
 Mob Programming has:
@@ -60,6 +56,7 @@ Mob Programming has:
 * synchronous work require the participants to align work schedule
 
 # Recommended Links
-* [!Mob Programming - A Whole Team Approach by Woody Zuill] https://www.agilealliance.org/resources/experience-reports/mob-programming-agile2014/
-* Mob Programming and the Power of Flow • Woody Zuill • GOTO 2019 https://youtu.be/28S4CVkYhWA
+* [Mob Programming - A Whole Team Approach by Woody Zuill] (https://www.agilealliance.org/resources/experience-reports/mob-programming-agile2014/)
+* [![Mob Programming and the Power of Flow • Woody Zuill • GOTO 2019](http://img.youtube.com/vi/28S4CVkYhWA/0.jpg)](https://youtu.be/28S4CVkYhWA)
+
 
