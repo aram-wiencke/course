@@ -4,8 +4,7 @@ Most common Software Systems use TCP over IP. Therefore this will be our focus f
 We want to gain an understanding how common high level protocols like HTTP work upon this stack.
 But to provide an general overview this chapter starts with the OSI model showing the layers for communication for computing systems in an abstract form. Later on it will continue describing examples of layers' implementations like IP, TCP, HTTP, etc. 
 ## OSI model
-The Open Systems Interconnection model is a conceptual model that splits the functions of communication in abstract layers. It does not describe the possible internal implementation, it rather 
- Each intermediate layer serves a class of functionality to the layer above it and is served by the layer below it.
+The Open Systems Interconnection model is a conceptual model that splits the functions of communication in abstract layers. It does not describe the possible internal implementation, it rather defines which functionality abstract layer should have. Each intermediate layer serves a class of functionality to the layer above it and is served by the layer below it. 
 
 The functions  describe the basic applications for communication of all communication protocols.
  The OSI model consists out of the following layers Physical, Data link, Network, Transport, Session, Presentation and Application.
@@ -224,6 +223,7 @@ The following table is a comprehensive list of the status codes. You don't need 
 | 512-599 | Unassigned                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                 |
 ### MQTT
 As a different Example for a application layer protocol we going to look at is  **MQ** **T**elemetry **T**ansport. It is a lightweight publish-subscribe protocoll.
+
 
 # Recommended Links
 * https://developer.mozilla.org/en-US/docs/Web/HTTP
