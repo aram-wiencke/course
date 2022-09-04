@@ -33,7 +33,8 @@ Describe the problem you're trying to solve and explain why it's important.
 ## Options
 |             | Option 1                                                   | Option 2  | Option ... |
 |-------------|------------------------------------------------------------|-----------|------------|
-| Pros & Cons | + <advantage> - <disadvanatage>                            |           |            |
+| Pros & Cons | + <advantage> 
+                - <disadvanatage>                            |           |            |
 | Consequence | * Are there any constraints concluding?                    |           |            |
 | Impact      | * Is a system impacted? * Is a person or a group impacted? |           |            |
 |             |                                                            |           |            |
