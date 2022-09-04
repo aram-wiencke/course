@@ -107,7 +107,7 @@ Body line 2
 | PUT     | The PUT method replaces all current representations of the target resource with the request payload.                        | https://httpwg.org/specs/rfc7231.html#PUT     |
 | DELETE  | The DELETE method deletes the specified resource.                                                                           | https://httpwg.org/specs/rfc7231.html#DELETE  |
 | CONNECT | The CONNECT method establishes a tunnel to the server identified by the target resource.                                    | https://httpwg.org/specs/rfc7231.html#CONNECT |
-| OPTIONS | The OPTIONS method describes the communication options for the target resource.                                             | https://httpwg.org/specs/rfc7231.html#OPTIONS |
+| OPTIONS | The OPTIONS method requests for a list of available HTTP methods.                                                           | https://httpwg.org/specs/rfc7231.html#OPTIONS |
 | TRACE   | The TRACE method performs a message loop-back test along the path to the target resource.                                   | https://httpwg.org/specs/rfc7231.html#TRACE   |
 | PATCH   | The PATCH method applies partial modifications to a resource.                                                               | https://www.rfc-editor.org/rfc/rfc5789        |
 
