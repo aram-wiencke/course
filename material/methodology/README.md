@@ -54,9 +54,9 @@ Mob Programming provides:
 Mob Programming has:
 
 * psychological barriers
-* * participants needs to be open for it
-* * participants can be too dominant (the others feel that they don't have the space to talk)
-* * participants can be too shy (underestimation of their input)
+  * participants needs to be open for it
+  * participants can be too dominant (the others feel that they don't have the space to talk)
+  * participants can be too shy (underestimation of their input)
 * synchronous work require the participants to align work schedule
 
 # Recommended Links
