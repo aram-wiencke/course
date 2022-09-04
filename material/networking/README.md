@@ -62,8 +62,13 @@ The basic data unit is called segment in TCP:
 
 ## Application Layer
 Now that we understand the TCP/IP we stack them to understand how they are used to implement for the application layer. As our first example we use HTTP.
-
+ 
 ![User datagram](https://www.oreilly.com/library/view/http-the-definitive/1565925092/httpatomoreillycomsourceoreillyimages96904.png) 
+
+We're going to have a look at HTTP and MQTT. HTTP is an example for a request-respone protocol and MQTT is an example for an publish-subscribe protocol.
+### Request-response and publish-subscribe.
+A request-response protocol often use the client-server model, meaning the client sends a request to the server and the server responses to that request. 
+In comparision the publish-subscribe model is a more decoupled variant between two applications. Between two applications exchanging information there is the so called message broker. An application that publishes messages to a topic at the broker is called producer. An application that wants to read these messages of needs to subscribe the topic and are called consumers. So there is no direct communication between producers and consumers. 
 
 ### HTTP
 Hypertext Transfer Protocol is the application layer protocol we going first to have a look at. HTTP is the foundation of data communication for the World Wide Web. 
@@ -217,19 +222,10 @@ The following table is a comprehensive list of the status codes. You don't need 
 | 510     | Not Extended (OBSOLETED)        | Further extensions to the request are required for the server to fulfill it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | https://www.iana.org/go/rfc2774 |
 | 511     | Network Authentication Required | Indicates that the client needs to authenticate to gain network access.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | https://www.iana.org/go/rfc6585 |
 | 512-599 | Unassigned                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                 |
-
-
-### Websocket
 ### MQTT
-### TLS
-#### Encryption & Certificates
-## Coding 
-We are going to use https://github.com/vladimirvivien/go-networking as reference for programming
-
-
-
-
+As a different Example for a application layer protocol we going to look at is  **MQ** **T**elemetry **T**ansport. It is a lightweight publish-subscribe protocoll.
 
 # Recommended Links
 * https://developer.mozilla.org/en-US/docs/Web/HTTP
+* https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html
 
