@@ -83,6 +83,18 @@ Body line 2
 #### HTTP Response
 The HTTP response also consists out of the start line, the header and the body. It divers from the request only at the start line. The start line does not contain a method since the server is responding with an result and is not demanding an action from the client. Instead of the method the start line contains the status code which indicate the success or the failure of that demanded action.
 
+```
+HTTP/1.1 200 OK
+Connection: keep-alive
+Context-Type: text/html
+Content-Length: 123
+
+Body line 1
+Body line 2
+...
+
+```
+
 ##### Status codes
 
 ### Websocket
