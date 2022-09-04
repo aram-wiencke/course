@@ -130,6 +130,17 @@ The status codes of HTTP response indicate whether the corresponding HTTP reques
 4. Client error responses (400–499)
 5. Server error responses (500–599)
 
+The following table is a comprehensive list of the status codes. You don't need to know all the status codes. Most common are: 
+* 200: Request was successful
+* 204: Request was successful - no payload included in the message body
+* 30x: Redirection 
+* 400: Request message is invalid
+* 403: Request is not authorized
+* 404: Resource not found
+* 405: Method for that URI not supported
+* 500: Internal server error
+* 503: Service unavailable (server is not ready)
+
 |   Code  | Description                     | Explaination                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Specification Link              |
 |:-------:|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 |   100   | Continue                        | This interim response indicates that the client should continue the request or ignore the response if the request is already finished.                                                                                                                                                                                                                                                                                                                                                                                                                                                      | https://www.iana.org/go/rfc9110 |
