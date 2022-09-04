@@ -53,7 +53,7 @@ Mob Programming provides:
 ## Drawbacks
 Mob Programming has:
 
-* psychological barriers
+* psychological barriers 
   * participants needs to be open for it
   * participants can be too dominant (the others feel that they don't have the space to talk)
   * participants can be too shy (underestimation of their input)
