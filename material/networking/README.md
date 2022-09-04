@@ -79,6 +79,18 @@ Body line 2
 
 ##### Methods
 
+| Method  | Description                                                                                                                 | Specification Link                            |
+|---------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| GET     | The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.           | https://httpwg.org/specs/rfc7231.html#GET     |
+| HEAD    | The HEAD method asks for a response identical to a GET request, but without the response body.                              | https://httpwg.org/specs/rfc7231.html#HEAD    |
+| POST    | The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server. | https://httpwg.org/specs/rfc7231.html#POST    |
+| PUT     | The PUT method replaces all current representations of the target resource with the request payload.                        | https://httpwg.org/specs/rfc7231.html#PUT     |
+| DELETE  | The DELETE method deletes the specified resource.                                                                           | https://httpwg.org/specs/rfc7231.html#DELETE  |
+| CONNECT | The CONNECT method establishes a tunnel to the server identified by the target resource.                                    | https://httpwg.org/specs/rfc7231.html#CONNECT |
+| OPTIONS | The OPTIONS method describes the communication options for the target resource.                                             | https://httpwg.org/specs/rfc7231.html#OPTIONS |
+| TRACE   | The TRACE method performs a message loop-back test along the path to the target resource.                                   | https://httpwg.org/specs/rfc7231.html#TRACE   |
+| PATCH   | The PATCH method applies partial modifications to a resource.                                                               | https://www.rfc-editor.org/rfc/rfc5789        |
+
 
 #### HTTP Response
 The HTTP response also consists out of the start line, the header and the body. It divers from the request only at the start line. The start line does not contain a method since the server is responding with an result and is not demanding an action from the client. Instead of the method the start line contains the status code which indicate the success or the failure of that demanded action.
