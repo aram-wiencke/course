@@ -58,5 +58,7 @@ Mob Programming has:
 # Recommended Links
 * [Mob Programming - A Whole Team Approach by Woody Zuill] (https://www.agilealliance.org/resources/experience-reports/mob-programming-agile2014/)
 * [![Mob Programming and the Power of Flow • Woody Zuill • GOTO 2019](http://img.youtube.com/vi/28S4CVkYhWA/0.jpg)](https://youtu.be/28S4CVkYhWA)
+* 
+* [![A Day of Mob Programming](http://img.youtube.com/vi/dVqUcNKVbYg/0.jpg)](https://youtu.be/dVqUcNKVbYg)
 
 
