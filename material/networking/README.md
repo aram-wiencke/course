@@ -20,20 +20,20 @@ The functions  describe the basic applications for communication of all communic
 |              | 1     | Physical     | Bit, Symbol              | Transmission and reception of raw bit streams over a physical medium                                                                             |
 
 ## What component handles which layer?
-The device (e.g. our computer) is running on covers the physical layer and tha data link layer. The hardware and firmware translates between physical signals and bits. They also group them to frames. The device's driver controls the according functions. The network layer and the transport layer are covered by the OS, although privileged user space processes may get access to the data.
+The device (e.g. our computer) is running on covers the physical layer and tha data link layer. The hardware and firmware translates between physical signals and bits. They also group them to those so-called frames. The device's driver controls the according functions. The network layer and the transport layer are covered by the OS, although privileged user space processes may get access to the data.
 
 >A modern computer operating system usually segregates virtual memory into user space and kernel space. Primarily, this separation serves to provide memory protection and hardware protection from malicious or errant software behaviour.
 
 Kernel space is strictly reserved for running a privileged operating system kernel, kernel extensions, and most device drivers. In contrast, user space is the memory area where application software and some drivers execute.
 
-The frame header data tells what to do with the frame. If the kernel (more precisely: the network driver) knows the type of the payload (e.g. IPv4 or IPv6) then the packet (after stripping off data link layer headers and trailers) is passed up to the according network layer driver.
+The frame header data tells what to do with the frame. If the kernel (more precisely: the network driver) knows the type of the payload (e.g. IPv4 or IPv6) then the packet (after stripping off data link layer headers and trailers) is passed up to the according network layer driver. The network driver will handle all peculiarities of the network layer protocol, such as fragmentation and reassembly, checksum calculation and verification, etc. plus all network layer specific tasks such as routing and packet filtering. Depending on the payload (TCP, UDP, etc.) the packet is passed further up to the according transport layer driver. 
 
-It will handle all peculiarities of the network layer protocol, such as fragmentation and reassembly, checksum calculation and verification, etc. plus all network layer specific tasks such as routing and packet filtering. Depending on the payload (TCP, UDP, etc.) the packet is passed further up to the according transport layer driver. It will handle all the transport layer specific stuff. For connection oriented protocols like TCP it means for instance keeping track of the connection state, maintaining the queues and doing the bookkeeping; another thing is congestion control.
+The transport layer driver will handle all the transport layer specific stuff. For connection oriented protocols like TCP it means for instance keeping track of the connection state, maintaining the queues and doing the bookkeeping; another thing is congestion control.
 
 Once a packet has passed that layer it is passed further up (again after stripping the transport layer header), but this time to the user space process. The user space process sees virtually nothing of the lower level processing.
 
 ## Comparisment to the TCP/IP model
-The TCP/IP model serves the same purpose as the OSI model, it defines functions for diffent layers 
+The TCP/IP model serves the same purpose as the OSI model. Both are conceptial models for networking. They define functions for diffent abstraction layers. The OSI modell is more general where the TCP/IP focuses on stack of protocols and technologies for the internet only.
 
 ![OSIvsTCP/IP](https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/02/OSI-vs.-TCPIP-models.jpg)
 
