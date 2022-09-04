@@ -7,7 +7,7 @@ But to provide an general overview this chapter starts with the OSI model showin
 The Open Systems Interconnection model is a conceptual model that splits the functions of communication in abstract layers. It does not describe the possible internal implementation, it rather defines which functionality abstract layer should have. Each intermediate layer serves a class of functionality to the layer above it and is served by the layer below it. 
 
 The functions  describe the basic applications for communication of all communication protocols.
- The OSI model consists out of the following layers Physical, Data link, Network, Transport, Session, Presentation and Application.
+The OSI model consists out of the following layers Physical, Data link, Network, Transport, Session, Presentation and Application.
 
  |              | Layer |              | Protocol data unit (PDU) |                                                                     Function                                                                     |
 |:------------:|:-----:|:------------:|:------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -65,7 +65,7 @@ Now that we understand the TCP/IP we stack them to understand how they are used 
 ![User datagram](https://www.oreilly.com/library/view/http-the-definitive/1565925092/httpatomoreillycomsourceoreillyimages96904.png) 
 
 We're going to have a look at HTTP and MQTT. HTTP is an example for a request-respone protocol and MQTT is an example for an publish-subscribe protocol.
-### Request-response and publish-subscribe.
+### Request-response and publish-subscribe
 A request-response protocol often use the client-server model, meaning the client sends a request to the server and the server responses to that request. 
 In comparision the publish-subscribe model is a more decoupled variant between two applications. Between two applications exchanging information there is the so called message broker. An application that publishes messages to a topic at the broker is called producer. An application that wants to read these messages of needs to subscribe the topic and are called consumers. So there is no direct communication between producers and consumers. 
 
@@ -223,7 +223,8 @@ The following table is a comprehensive list of the status codes. You don't need 
 | 512-599 | Unassigned                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                 |
 ### MQTT
 As a different Example for a application layer protocol we going to look at is  **MQ** **T**elemetry **T**ansport. It is a lightweight publish-subscribe protocoll.
-
+Like in HTTP MQTT is used with the transport protocol TCP. 
+As mentioned in the prevoius section "Request-response and publish-subscribe" 
 
 # Recommended Links
 * https://developer.mozilla.org/en-US/docs/Web/HTTP
