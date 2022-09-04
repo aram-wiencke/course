@@ -72,7 +72,7 @@ In comparision the publish-subscribe model is a more decoupled variant between t
 ### HTTP
 Hypertext Transfer Protocol is the application layer protocol we going first to have a look at. HTTP is the foundation of data communication for the World Wide Web. 
 As you might know we use it daily when browsing on the Web. Our device is the client which is requesting a website from a server. 
-Or in short: HTTP is a request-response protocol that uses a client-server model. Unlike FTP HTTP is a stateless protocol i.e. the server does not need to retain information for each user over multiple requests.
+Or in short: HTTP is a request-response protocol that uses a client-server model. Unlike FTP (File Transfer Protocol) HTTP is a stateless protocol i.e. the server does not need to retain information for each user over multiple requests.
 A HTTP request or response is consist out of three sections the start line, the Header and the Body. Let's first have a look how a http request is structured and then we'll have a look whats different at the HTTP response.
 
 #### HTTP request
