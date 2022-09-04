@@ -33,9 +33,9 @@ Describe the problem you're trying to solve and explain why it's important.
 ## Options
 |             | Option 1                                                   | Option 2  | Option ... |
 |-------------|------------------------------------------------------------|-----------|------------|
-| Pros & Cons | + <advantage> <br /> - <disadvanatage>                            |           |            |
+| Pros & Cons | + What is an benefit?? <br /> - What is an drawback        |           |            |
 | Consequence | * Are there any constraints concluding?                    |           |            |
-| Impact      | * Is a system impacted? * Is a person or a group impacted? |           |            |
+| Impact      | * Is a system impacted? <br /> * Is a person or a group impacted? |           |            |
 |             |                                                            |           |            |
 |             |                                                            |           |            |
 |             |                                                            |           |            |
