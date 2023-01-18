@@ -4,7 +4,7 @@ It is designed to be easily integrated into existing web pages and applications,
 JSON-LD is based on the popular JSON format, but includes additional features such as context, which allows for unambiguous interpretation of the data, and links, which allow for connecting data from different sources. 
 JSON-LD is also designed to be easy to understand and use, making it a popular choice for developers looking to work with linked data on the web.
 
-```
+```json
 {
     "@context": {
         "name": "http://schema.org/name",
