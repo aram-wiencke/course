@@ -6,7 +6,7 @@ JSON-LD is also designed to be easy to understand and use, making it a popular c
 
 ```
 {
-    "@context": {e
+    "@context": {
         "name": "http://schema.org/name",
         "author": "http://schema.org/author",
         "book": "http://schema.org/Book"
