@@ -27,7 +27,7 @@ This way, the JSON-LD can easily link the book's information with the author's i
 ## Another example
 Here is an example of json that holds the context of on person.
 
-```
+```json
 {
   "@context": "https://json-ld.org/contexts/person.jsonld",
   "@id": "http://dbpedia.org/resource/John_Lennon",
@@ -38,7 +38,7 @@ Here is an example of json that holds the context of on person.
 ```
 Following the URL of that context leads to it's schema.
 
-```
+```json
 {
    "@context":
    {
